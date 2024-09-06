@@ -1,20 +1,171 @@
 {
-  "dataset_name": "imagenet",
-  "description": "ImageNet is a large-scale dataset for image classification, object detection, and other tasks.",
-  "version": "1.0",
-  "source": "http://www.image-net.org/",
-  "license": "Custom License",
-  "num_classes": 1000,
-  "num_images": 14197122,
-  "image_resolution": "224x224",
-  "categories": [
-    "animals",
-    "objects",
-    "scenes"
-  ],
-  "date_created": "2024-09-06",
-  "maintainer": {
-    "name": "ImageNet Team",
-    "contact": "contact@imagenet.org"
-  }
+  "dataset_name": "Human3.6M",
+  "diversity_and_size": {
+    "number_of_poses": 3600000,
+    "actors": {
+      "total": 11,
+      "male": 6,
+      "female": 5
+    },
+    "scenarios": [
+      "discussion",
+      "smoking",
+      "taking_photo",
+      "talking_on_the_phone",
+      "directions",
+      "eating",
+      "activities_while_seated",
+      "greeting",
+      "posing",
+      "making_purchases",
+      "waiting",
+      "walking",
+      "sitting_on_chair",
+      "walking_dog",
+      "walking_together"
+    ]
+  },
+  "capture_and_synchronization": {
+    "video": {
+      "resolution": "high",
+      "framerate": 50,
+      "cameras": 4,
+      "calibrated": true
+    },
+    "pose_data": {
+      "3D_joint_positions": true,
+      "joint_angles": true
+    },
+    "labels": {
+      "body_parts": 24,
+      "pixel_level": true
+    },
+    "range_data": {
+      "type": "time_of_flight",
+      "framerate": 25
+    },
+    "laser_scans": {
+      "available": true,
+      "3D_scans": true
+    },
+    "background_subtraction": true,
+    "person_bounding_boxes": true
+  },
+  "support_for_development": {
+    "precomputed_image_descriptors": true,
+    "visualization_software": true,
+    "pose_prediction_software": true,
+    "performance_evaluation": true,
+    "test_set_withheld": true
+  },
+  "subjects": {
+    "total": 11,
+    "male": 6,
+    "female": 5,
+    "bmi_range": {
+      "min": 17,
+      "max": 29
+    },
+    "training_and_validation": {
+      "subjects": 7,
+      "male": 4,
+      "female": 3
+    },
+    "test_set": {
+      "subjects": 4,
+      "male": 2,
+      "female": 2
+    }
+  },
+  "laboratory_setup": {
+    "capture_space": {
+      "dimensions": {
+        "total": {
+          "width": 6,
+          "length": 5
+        },
+        "effective": {
+          "width": 4,
+          "length": 3
+        }
+      }
+    },
+    "sensors": {
+      "total": 15,
+      "digital_video_cameras": 4,
+      "time_of_flight_sensor": 1,
+      "motion_cameras": 10
+    },
+    "camera_specs": {
+      "basler_high_resolution": true,
+      "framerate": 50,
+      "calibration": {
+        "simple_procedure": true,
+        "advanced_procedure": true
+      }
+    }
+  },
+  "pose_data": {
+    "skeleton": {
+      "total_joints": 32,
+      "relevant_joints": {
+        "hands": 1,
+        "feet": 1
+      }
+    },
+    "parametrizations": {
+      "relative_3D_joint_positions": true,
+      "kinematic_representation": true,
+      "2D_joint_positions": true
+    },
+    "projections": {
+      "from_3D_to_2D": true
+    },
+    "monocular_prediction": {
+      "available": true,
+      "camera_rotation_translation": true
+    },
+    "framerate": {
+      "pose": "4x video framerate"
+    },
+    "data_augmentation": {
+      "mirror_symmetry": true
+    }
+  },
+  "time_of_flight_data": {
+    "sensor_model": "MESA Imaging SR4000",
+    "framerate": 25,
+    "sync_with_system": true
+  },
+  "scanner_data": {
+    "3D_scanner_model": "Vitus Smart LC3",
+    "output_format": "Wavefront OBJ",
+    "preprocessing_software": "ScanWorks",
+    "manual_repair": true
+  },
+  "references": [
+    {
+      "title": "Human3.6M: Large Scale Datasets and Predictive Methods for 3D Human Sensing in Natural Environments",
+      "authors": ["Catalin Ionescu", "Dragos Papava", "Vlad Olaru", "Cristian Sminchisescu"],
+      "journal": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "volume": 36,
+      "number": 7,
+      "year": 2014,
+      "month": "July",
+      "links": {
+        "pdf": "http://vision.imar.ro/human3.6m/pami-h36m.pdf",
+        "bibtex": "http://vision.imar.ro/human3.6m/pami-h36m.bib"
+      }
+    },
+    {
+      "title": "Latent Structured Models for Human Pose Estimation",
+      "authors": ["Catalin Ionescu", "Fuxin Li", "Cristian Sminchisescu"],
+      "conference": "International Conference on Computer Vision",
+      "year": 2011,
+      "links": {
+        "pdf": "http://vision.imar.ro/human3.6m/ils_iccv11.pdff",
+        "bibtex": "http://vision.imar.ro/human3.6m/iccv2011.bib"
+      }
+    }
+  ]
 }
