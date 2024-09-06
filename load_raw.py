@@ -4,7 +4,7 @@ import argparse
 
 # Define dataset URLs
 DATASET_URLS = {
-    "imagenet": "http://www.image-net.org/download-image-net",  # Replace this with the actual ImageNet URL
+    "imagenet": "http://www.image-net.org/download-image-net",
     "cifar10": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz",
     "mnist": "http://yann.lecun.com/exdb/mnist/"
 }
