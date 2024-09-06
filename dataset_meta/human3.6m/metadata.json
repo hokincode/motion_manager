@@ -1,0 +1,20 @@
+{
+  "dataset_name": "imagenet",
+  "description": "ImageNet is a large-scale dataset for image classification, object detection, and other tasks.",
+  "version": "1.0",
+  "source": "http://www.image-net.org/",
+  "license": "Custom License",
+  "num_classes": 1000,
+  "num_images": 14197122,
+  "image_resolution": "224x224",
+  "categories": [
+    "animals",
+    "objects",
+    "scenes"
+  ],
+  "date_created": "2024-09-06",
+  "maintainer": {
+    "name": "ImageNet Team",
+    "contact": "contact@imagenet.org"
+  }
+}
