@@ -9,7 +9,6 @@ DATASET_URLS = {
     "mnist": "http://yann.lecun.com/exdb/mnist/"
 }
 
-
 class RawDataLoader:
     def __init__(self, dataset_dir):
         self.dataset_dir = dataset_dir

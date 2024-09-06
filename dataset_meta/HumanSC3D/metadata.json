@@ -1,0 +1,80 @@
+{
+    "dataset_name": "HumanSC3D",
+    "description": "Self-contact dataset with 1032 multi-view sequences, including actions in various scenarios with self-contact annotations.",
+    "subjects": {
+        "train": {
+            "count": 4,
+            "type": "subjects"
+        },
+        "test": {
+            "count": 2,
+            "type": "subjects"
+        }
+    },
+    "recording_info": {
+        "motion_capture_system": "Vicon",
+        "tracking_type": "marker-based"
+    },
+    "cameras": {
+        "count": 4,
+        "resolution": "900x900",
+        "fps": 50,
+        "camera_parameters": {
+            "extrinsics": "provided",
+            "intrinsics": {
+                "with_distortion": "model_1",
+                "without_distortion": "model_2"
+            }
+        },
+        "test_set_viewpoint": "one random frontal camera viewpoint per sequence"
+    },
+    "actions": {
+        "scenarios": {
+            "standing": 116,
+            "sitting_on_floor": 20,
+            "interacting_with_chair": 36
+        }
+    },
+    "meshes": {
+        "GHUM": {
+            "description": "Ground-truth, well-aligned mesh obtained by fitting GHUM model to 3D markers, multi-view image evidence, and body scans"
+        },
+        "SMPLX": {
+            "description": "Retargeted GHUM meshes to SMPLX topology with pose and shape parameters for both"
+        },
+        "fps": 50
+    },
+    "skeletons": {
+        "joint_count": 25,
+        "Human3.6m_joints_included": 17,
+        "fps": 50
+    },
+    "self_contact_annotations": {
+        "recordings": 1032,
+        "annotations_per_recording": {
+            "video_timestamp": "when self-contact is established",
+            "signature_annotation": "multiple correspondences on body surface between triangle ids / vertex ids / region ids",
+            "image_support_annotation": "projection of each self-contact vertex correspondence in the image"
+        },
+        "viewpoints": 4,
+        "triplets": 4128
+    },
+    "citation": {
+        "paper": {
+            "title": "Learning Complex 3D Human Self-Contact",
+            "authors": [
+                "Mihai Fieraru",
+                "Mihai Zanfir",
+                "Elisabeta Oneata",
+                "Alin-Ionut Popa",
+                "Vlad Olaru",
+                "Cristian Sminchisescu"
+            ],
+            "conference": "AAAI 2021",
+            "links": {
+                "pdf": "https://sc3d.imar.ro/sites/default/files/public/pdf/Fieraru_2021_AAAI.pdf",
+                "bibtex": "https://sc3d.imar.ro/sites/default/files/public/pdf/Fieraru_2021_AAAI.bib"
+            }
+        }
+    }
+}
