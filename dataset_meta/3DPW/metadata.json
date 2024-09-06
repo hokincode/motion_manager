@@ -1,17 +1,31 @@
 {
-  "dataset_name": "AMASS (Archive of Motion Capture as Surface Shapes)",
-  "description": "AMASS unifies 15 different optical marker-based mocap datasets, representing them in a common framework and parameterization using the MoSh++ method. This converts mocap data into realistic 3D human meshes represented by a rigged body model (SMPL). The dataset contains over 40 hours of motion data, spanning more than 300 subjects and over 11000 motions.",
-  "version": "1.0",
-  "url": "https://amass.is.tue.mpg.de/",
-  "data_format": [
-    "MoSh++",
-    "SMPL body model"
-  ],
-  "number_of_subjects": 300,
-  "total_motion_duration": "40+ hours",
-  "motions": 11000,
-  "recording_method": "Optical marker-based motion capture",
-  "body_representation": "3D human meshes, SMPL skeletal model",
-  "soft_tissue_dynamics": true,
-  "realistic_hand_motion": true
+    "dataset_name": "3DPW: 3D Poses in the Wild",
+    "description": "The 3D Poses in the Wild dataset is the first dataset captured in the wild with accurate 3D poses for evaluation. Unlike other outdoor datasets, which are restricted to a small recording volume, 3DPW includes video footage from a moving phone camera, enabling broader scenarios.",
+    "data_content": {
+        "video_sequences": 60,
+        "annotations": {
+            "2D_pose": "2D pose annotations for each video sequence.",
+            "3D_pose": "3D poses obtained using a method that leverages video and IMU data, achieving high accuracy in complex scenes."
+        },
+        "camera_poses": "Camera poses provided for every frame in the video sequences.",
+        "body_scans": "3D body scans and models (re-poseable and re-shapeable) corresponding to each video sequence.",
+        "3D_models": {
+            "count": 18,
+            "clothing_variations": "Models are available in different clothing variations."
+        }
+    },
+    "publication": {
+        "title": "Recovering Accurate 3D Human Pose in The Wild Using IMUs and a Moving Camera",
+        "authors": [
+            "Timo von Marcard",
+            "Roberto Henschel",
+            "Michael Black",
+            "Bodo Rosenhahn",
+            "Gerard Pons-Moll"
+        ],
+        "conference": "European Conference on Computer Vision (ECCV)",
+        "year": 2018,
+        "month": "September",
+        "citation": "@inproceedings{vonMarcard2018, title = {Recovering Accurate 3D Human Pose in The Wild Using IMUs and a Moving Camera}, author = {von Marcard, Timo and Henschel, Roberto and Black, Michael and Rosenhahn, Bodo and Pons-Moll, Gerard}, booktitle = {European Conference on Computer Vision (ECCV)}, year = {2018}, month = {sep} }"
+    }
 }
