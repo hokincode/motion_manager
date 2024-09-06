@@ -12,6 +12,7 @@ This is a manager designed to manage motion datasets through the command line. T
 
 The script expects a directory named `dataset_meta` in the same folder as `manage.py`. Inside this directory, each dataset meta descriptions is stored as a subfolder. 
 
+```
 project_directory/
 │
 ├── manage.py
@@ -28,3 +29,4 @@ project_directory/
     ├── dataset_name_1/  # Dataset files (e.g., CSV, images, etc.)
     ├── dataset_name_2/  # Dataset files (e.g., CSV, images, etc.)
     └── ...  # Additional datasets' files
+```
