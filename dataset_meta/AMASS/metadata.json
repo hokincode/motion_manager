@@ -13,6 +13,5 @@
   "recording_method": "Optical marker-based motion capture",
   "body_representation": "3D human meshes, SMPL skeletal model",
   "soft_tissue_dynamics": true,
-  "realistic_hand_motion": true,
-  "citation": "@conference{AMASS:ICCV:2019, title = {{AMASS}: Archive of Motion Capture as Surface Shapes}, author = {Mahmood, Naureen and Ghorbani, Nima and Troje, Nikolaus F. and Pons-Moll, Gerard and Black, Michael J.}, booktitle = {International Conference on Computer Vision}, pages = {5442--5451}, month = oct, year = {2019}, month_numeric = {10} }",
+  "realistic_hand_motion": true
 }
