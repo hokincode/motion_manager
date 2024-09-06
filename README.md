@@ -1,4 +1,4 @@
-# Dataset Manager Script
+# Motion Dataset Manager
 
 This is a manager designed to manage motion datasets through the command line. The manager allows you to list, load, and add motion datasets.
 
