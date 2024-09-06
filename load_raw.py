@@ -64,22 +64,17 @@ Example Usages:
     """
     print(usage_text)
 
-
 def main():
     parser = argparse.ArgumentParser(description="Raw Dataset Loader")
     parser.add_argument("dataset", type=str,
-                        help="The name of the dataset to download (e.g., imagenet, cifar10, mnist)")
+                        help="The name of the dataset to download (e.g., human3.6m)")
 
     args = parser.parse_args()
-
     loader = RawDataLoader(dataset_dir="raw_data")
-
     # Download the dataset from the provided name
     loader.download_dataset(args.dataset)
-
     # Extract the dataset
     loader.extract_dataset(args.dataset)
-
 
 if __name__ == "__main__":
     main()
