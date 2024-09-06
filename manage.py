@@ -59,7 +59,7 @@ def main():
 
     args = parser.parse_args()
 
-    manager = DatasetManager(dataset_dir="datasets")
+    manager = DatasetManager(dataset_dir="dataset_meta")
 
     if args.list:
         manager.list_datasets()
