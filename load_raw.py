@@ -60,9 +60,7 @@ Query Available datasets via :
 
 Example Usages:
     - Download and extract the ImageNet dataset:
-        python load_raw.py imagenet
-    - Download and extract the CIFAR-10 dataset:
-        python load_raw.py cifar10
+        python load_raw.py human3.6m
     """
     print(usage_text)
 
