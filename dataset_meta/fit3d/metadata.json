@@ -1,0 +1,80 @@
+{
+    "dataset_name": "fit3d",
+    "description": "611 multi-view sequences; minimum 5 annotated repetitions per sequence; 2,964,236 highly accurate ground truth 3D skeletons, GHUM & SMPLX human pose and shape parameters.",
+    "subjects": {
+        "train": {
+            "count": 8,
+            "type": "trainees"
+        },
+        "test": {
+            "count": 3,
+            "composition": {
+                "trainer": 1,
+                "trainees": 2
+            }
+        }
+    },
+    "recording_info": {
+        "motion_capture_system": "Vicon",
+        "tracking_type": "marker-based"
+    },
+    "cameras": {
+        "count": 4,
+        "resolution": "900x900",
+        "fps": 50,
+        "camera_parameters": {
+            "extrinsics": "provided",
+            "intrinsics": {
+                "with_distortion": "model_1",
+                "without_distortion": "model_2"
+            }
+        },
+        "test_set_viewpoint": "one random camera viewpoint per sequence"
+    },
+    "exercises": {
+        "count": 47,
+        "categories": [
+            "Warmups",
+            "Barbell Exercises",
+            "Dumbbell Exercises",
+            "Equipment-Free Exercises"
+        ]
+    },
+    "meshes": {
+        "GHUM": {
+            "description": "Ground-truth, well-aligned mesh obtained by fitting GHUM model to 3D markers, multi-view image evidence, and body scans"
+        },
+        "SMPLX": {
+            "description": "Retargeted GHUM meshes to SMPLX topology with pose and shape parameters for both"
+        },
+        "fps": 50
+    },
+    "skeletons": {
+        "joint_count": 25,
+        "Human3.6m_joints_included": 17,
+        "fps": 50
+    },
+    "repetition_segmentations": {
+        "recordings": 611,
+        "repetitions_per_recording": ">5",
+        "exercise_name_included": true,
+        "viewpoints": 4,
+        "video_segmentation_pairs": 2444
+    },
+    "citation": {
+        "paper": {
+            "title": "AIFit: Automatic 3D Human-Interpretable Feedback Models for Fitness Training",
+            "authors": [
+                "Mihai Fieraru",
+                "Mihai Zanfir",
+                "Silviu-Cristian Pirlea",
+                "Vlad Olaru",
+                "Cristian Sminchisescu"
+            ],
+            "conference": "CVPR 2021",
+            "month": "June",
+            "year": 2021
+        },
+        "bibtex": "@InProceedings{Fieraru_2021_CVPR,\n author = {Fieraru, Mihai and Zanfir, Mihai and Pirlea, Silviu-Cristian and Olaru, Vlad and Sminchisescu, Cristian},\n title = {AIFit: Automatic 3D Human-Interpretable Feedback Models for Fitness Training},\n booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},\n month = {June},\n year = {2021}\n}"
+    }
+}

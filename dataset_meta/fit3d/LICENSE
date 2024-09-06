@@ -1,34 +1,21 @@
-License agreement
+Software Copyright License for non-commercial scientific research purposes
+Please read carefully the following terms and conditions and any accompanying documentation before you download and/or use the Fit3D Software/Data, (the "Software"). By downloading and/or using the Software, you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Software. Any infringement of the terms of this agreement will automatically terminate your rights under this License.
+Ownership
+The Software and the associated materials has been developed at the „Simion Stoilow“ Institute of Mathematics of the Romanian Academy (hereinafter "IMAR"). Any copyright or patent right is owned by and proprietary material of the „Simion Stoilow“ Institute of Mathematics of the Romanian Academy, hereinafter the “Licensor”.
+License Grant
+Licensor grants you (Licensee) personally a single-user, non-exclusive, non-transferable, free of charge right: - To install the Software on computers owned, leased or otherwise controlled by you and/or your organization; - To use the Software for the sole purpose of performing non-commercial scientific research, non-commercial education, or non-commercial artistic projects; - To modify, adapt, translate or create derivative works based upon the Software. Any other use, in particular any use for commercial purposes, is prohibited. This includes, without limitation, incorporation in a commercial product, use in a commercial service, or production of other artefacts for commercial purposes. The Software may not be reproduced, modified and/or made available in any form to any third party without IMAR’s prior written permission. The Software may not be used for pornographic purposes or to generate pornographic material whether commercial or not. This license also prohibits the use of the Software to train methods/algorithms/neural networks/etc. for commercial use of any kind. By downloading the Software, you agree not to reverse engineer it.
+No Distribution
+The Software and the license herein granted shall not be copied, shared, distributed, re-sold, offered for re-sale, transferred or sub-licensed in whole or in part except that you may make one copy for archive purposes only.
+Disclaimer of Representations and Warranties
+You expressly acknowledge and agree that the Software results from basic research, is provided “AS IS”, may contain errors, and that any use of the Software is at your sole risk. LICENSOR MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE SOFTWARE, NEITHER EXPRESS NOR IMPLIED, AND THE ABSENCE OF ANY LEGAL OR ACTUAL DEFECTS, WHETHER DISCOVERABLE OR NOT. Specifically, and not to limit the foregoing, licensor makes no representations or warranties (i) regarding the merchantability or fitness for a particular purpose of the Software, (ii) that the use of the Software will not infringe any patents, copyrights or other intellectual property rights of a third party, and (iii) that the use of the Software will not cause any damage of any kind to you or a third party.
+Limitation of Liability
+In no event shall the licensor be liable for any other damages whatsoever arising out of the use of, or inability to use this dataset and its associated software, even if the authors have been advised of the possibility of such damages.
+No Maintenance Services
+You understand and agree that IMAR is under no obligation to provide either maintenance services, update services, notices of latent defects, or corrections of defects with regard to the Data. IMAR nevertheless reserves the right to update, modify, or discontinue the Data at any time.
+Publications using the Software
+You acknowledge that the Software is a valuable scientific resource and agree to appropriately reference the following paper in any publication making use of the Software.
 
-1. GRANT OF LICENSE FREE OF CHARGE FOR ACADEMIC USE ONLY
-Licenses free of charge are limited to academic use only. Provided you send the request from an academic address, you are granted a limited, non-exclusive, non-assignable and non-transferable license to use this dataset subject to the terms below. This license is not a sale of any or all of the owner's rights. This product may only be used by you, and you may not rent, lease, lend, sub-license or transfer the dataset or any of your rights under this agreement to anyone else.
-
-2. NO WARRANTIES
-The authors do not warrant the quality, accuracy, or completeness of any information, data or software provided. Such data and software is provided "AS IS" without warranty or condition of any nature. The authors disclaim all other warranties, expressed or implied, including but not limited to implied warranties of merchantability and fitness for a particular purpose, with respect to the data and any accompanying materials.
-
-3. RESTRICTION AND LIMITATION OF LIABILITY
-In no event shall the authors be liable for any other damages whatsoever arising out of the use of, or inability to use this dataset and its associated software, even if the authors have been advised of the possibility of such damages.
-
-4. RESPONSIBLE USE
-It is YOUR RESPONSIBILITY to ensure that your use of this product complies with these terms and to seek prior written permission from the authors and pay any additional fees or royalties, as may be required, for any uses not permitted or not specified in this agreement.
-
-5. ACCEPTANCE OF THIS AGREEMENT
-Any use whatsoever of this dataset and its associated software shall constitute your acceptance of the terms of this agreement. By using the dataset and its associated software, you agree to cite the papers of the authors, in any of your publications by you and your collaborators that make any use of the dataset, in the following format (NOTICE THAT CITING THE DATASET URL INSTEAD OF THE PUBLICATIONS, WOULD NOT BE COMPLIANT WITH THIS LICENSE AGREEMENT):
-
-@article{h36m_pami,
-author = {Ionescu, Catalin and Papava, Dragos and Olaru, Vlad and Sminchisescu, Cristian},
-title = {Human3.6M: Large Scale Datasets and Predictive Methods for 3D Human Sensing in Natural Environments},
-journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
-publisher = {IEEE Computer Society},
-year = {2014}
-}
-
-@inproceedings{IonescuSminchisescu11,
-author = {Catalin Ionescu, Fuxin Li, Cristian Sminchisescu},
-title = {Latent Structured Models for Human Pose Estimation},
-booktitle = {International Conference on Computer Vision},
-year = {2011}
-}
-
-6. FURTHER INFORMATION AND COMMERCIAL LICENSING
-For further information, or for commercial licensing, please contact us at the following email address:human3.6m@imar.ro
+Mihai Fieraru, Mihai Zanfir, Silviu-Cristian Pirlea, Vlad Olaru, Cristian Sminchisescu. AIFit: Automatic 3D Human-Interpretable Feedback Models for Fitness Training . June 2021. In CVPR 2021.
+@InProceedings{Fieraru_2021_CVPR, author = {Fieraru, Mihai and Zanfir, Mihai and Pirlea, Silviu-Cristian and Olaru, Vlad and Sminchisescu, Cristian}, title = {AIFit: Automatic 3D Human-Interpretable Feedback Models for Fitness Training}, booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, month = {June}, year = {2021} }
+Commercial licensing opportunities
+For commercial uses of the Software, please send email to licenses@imar.ro with the subject [Fit3D Commercial Use]. This Agreement shall be governed by the laws of Romania and the European Union.
