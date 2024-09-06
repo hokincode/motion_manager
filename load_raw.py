@@ -19,7 +19,7 @@ class RawDataLoader:
     def download_dataset(self, dataset_name):
         dataset_url = DATASET_URLS.get(dataset_name)
         if not dataset_url:
-            print(f"Dataset '{dataset_name}' is not recognized. Available datasets are: {list(DATASET_URLS.keys())}")
+            print(f"Dataset '{dataset_name}' needs to be downloaded manually. Available datasets are: {list(DATASET_URLS.keys())}")
             return
 
         dataset_path = os.path.join(self.dataset_dir, dataset_name)
