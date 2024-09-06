@@ -1,0 +1,64 @@
+{
+    "dataset_name": "DensePose-COCO",
+    "description": "DensePose-COCO is a large-scale ground-truth dataset with image-to-surface correspondences manually annotated on 50,000 COCO images. It is designed for dense human pose estimation, mapping all human pixels of an RGB image to the 3D surface of the human body using SMPL and SURREAL textures.",
+    "version": "1.0",
+    "release_date": "2018",
+    "citation": {
+        "type": "inproceedings",
+        "title": "DensePose: Dense Human Pose Estimation in the Wild",
+        "authors": [
+            "Güler, Rıza Alp",
+            "Neverova, Natalia",
+            "Kokkinos, Iasonas"
+        ],
+        "booktitle": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition",
+        "year": 2018,
+        "pages": "7297-7306",
+        "url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Guler_DensePose_Dense_Human_CVPR_2018_paper.pdf"
+    },
+    "annotations": {
+        "annotation_format": "COCO-style JSON",
+        "annotation_fields": [
+            "segmentation",
+            "UV coordinates",
+            "part-specific regions"
+        ],
+        "total_images": 50000,
+        "SMPL_model": true,
+        "SURREAL_textures": true,
+        "annotation_pipeline": {
+            "stage_1": "Annotators delineate visible body parts, estimating parts behind clothes.",
+            "stage_2": "Equidistant points sampled from parts and mapped to 3D surface using six pre-rendered views."
+        }
+    },
+    "files": [
+        {
+            "file_name": "densepose_coco_annotations_train2018.json",
+            "description": "Annotations for the training set"
+        },
+        {
+            "file_name": "densepose_coco_annotations_val2018.json",
+            "description": "Annotations for the validation set"
+        }
+    ],
+    "source_images": {
+        "source": "COCO dataset",
+        "COCO_version": "2017",
+        "total_images": 50000,
+        "resolution": "varying resolutions"
+    },
+    "related_papers": [
+        {
+            "title": "SMPL: A Skinned Multi-Person Linear Model",
+            "authors": ["Loper, Matthew", "Mahmood, Naureen", "Black, Michael J."],
+            "year": 2015,
+            "url": "https://smpl.is.tue.mpg.de/"
+        },
+        {
+            "title": "SURREAL: Learning from Synthetic Humans",
+            "authors": ["Varol, Gül", "Romero, Javier", "Black, Michael J."],
+            "year": 2017,
+            "url": "https://surreal.is.tue.mpg.de/"
+        }
+    ]
+}

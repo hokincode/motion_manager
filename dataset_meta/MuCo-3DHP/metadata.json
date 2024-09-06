@@ -1,0 +1,20 @@
+{
+  "dataset_name": "MuCo-3DHP and MuPoTs-3D",
+  "description": "Datasets for multi-person 3D pose estimation using monocular RGB images. MuCo-3DHP is synthetic, MuPoTs-3D contains real-world scenes with occlusions.",
+  "version": "1.0",
+  "tasks": ["3D pose estimation", "multi-person pose estimation"],
+  "data_sources": {
+    "MuCo-3DHP": {
+      "type": "synthetic",
+      "annotations": "3D joint positions and body part associations"
+    },
+    "MuPoTs-3D": {
+      "type": "real-world",
+      "annotations": "3D joint positions under occlusions"
+    }
+  },
+  "method": "Single-shot 3D pose estimation with Occlusion-Robust Pose-Maps (ORPM).",
+  "citation": {
+    "bibtex": "@inproceedings{singleshotmultiperson2018, title = {Single-Shot Multi-Person 3D Pose Estimation From Monocular RGB}, author = {Mehta, Dushyant and Sotnychenko, Oleksandr and Mueller, Franziska and Xu, Weipeng and Sridhar, Srinath and Pons-Moll, Gerard and Theobalt, Christian}, booktitle = {3D Vision (3DV), 2018 Sixth International Conference on}, month = {sep}, year = {2018}, organization={IEEE}, url = {http://gvv.mpi-inf.mpg.de/projects/SingleShotMultiPerson} }"
+  }
+}
