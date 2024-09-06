@@ -4,9 +4,7 @@ import argparse
 
 # Define dataset URLs
 DATASET_URLS = {
-    "imagenet": "http://www.image-net.org/download-image-net",
-    "cifar10": "https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz",
-    "mnist": "http://yann.lecun.com/exdb/mnist/"
+    "empty": "http://www.empty.com"
 }
 
 class RawDataLoader:
@@ -20,11 +18,9 @@ class RawDataLoader:
         if not dataset_url:
             print(f"Dataset '{dataset_name}' needs to be downloaded manually. Available datasets are: {list(DATASET_URLS.keys())}")
             return False
-
         dataset_path = os.path.join(self.dataset_dir, dataset_name)
         if not os.path.exists(dataset_path):
             os.makedirs(dataset_path)
-
         print(f"Downloading dataset: {dataset_name}")
         try:
             # Use wget to download the dataset
