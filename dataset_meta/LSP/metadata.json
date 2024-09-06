@@ -1,0 +1,29 @@
+{
+  "name": "leeds_sports_pose",
+  "keywords": ["image_processing", "detection", "human_pose", "keypoints"],
+  "dataset_size": "264.2 MB",
+  "is_downloadable": true,
+  "tasks": {
+    "keypoints": {
+      "primary_use": "human body joint detection",
+      "sets": ["train", "test"],
+      "metadata_file_size": "473.7 kB",
+      "annotations": ["body joint keypoints"]
+    },
+    "keypoints_original": {
+      "primary_use": "human body joint detection",
+      "sets": ["train", "test"],
+      "metadata_file_size": "396.0 kB",
+      "annotations": ["body joint keypoints"]
+    }
+  },
+  "citation": {
+    "title": "Clustered Pose and Nonlinear Appearance Models for Human Pose Estimation.",
+    "author": "Johnson, Sam and Everingham, Mark",
+    "booktitle": "bmvc",
+    "volume": "2",
+    "number": "4",
+    "pages": "5",
+    "year": "2010"
+  }
+}
