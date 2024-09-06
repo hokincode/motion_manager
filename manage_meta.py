@@ -31,7 +31,7 @@ class MetaManager:
         dataset_path = os.path.join(self.dataset_dir, dataset_name)
         if not os.path.exists(dataset_path):
             os.makedirs(dataset_path)
-            metadata_path = os.path.join(dataset_path, 'metadata.json')
+            metadata_path = os.path.join(dataset_path, "metadata.json")
             metadata = {"name": dataset_name, "description": "", "version": "1.0"}
             with open(metadata_path, 'w') as f:
                 json.dump(metadata, f, indent=4)
@@ -51,7 +51,7 @@ Example Usages:
     - List all datasets:
         python manage_meta.py --list
     - Load metadata for a dataset named 'my_dataset':
-        python manage_meta.py --load my_dataset
+        python manage_meta.py --about my_dataset
     - Add a new dataset called 'new_dataset':
         python manage_meta.py --add new_dataset
     """
@@ -60,7 +60,7 @@ Example Usages:
 def main():
     parser = argparse.ArgumentParser(description="Dataset Metadata Manager", add_help=False)
     parser.add_argument("--list", action="store_true", help="List all datasets")
-    parser.add_argument("--load", type=str, help="Load metadata for a specific dataset")
+    parser.add_argument("--about", type=str, help="Load metadata for a specific dataset")
     parser.add_argument("--add", type=str, help="Add a new dataset with default metadata")
 
     args = parser.parse_args()
@@ -69,8 +69,8 @@ def main():
 
     if args.list:
         manager.list_meta_info()
-    elif args.load:
-        manager.print_meta_info(args.load)
+    elif args.about:
+        manager.print_meta_info(args.about)
     elif args.add:
         manager.add_meta_info(args.add)
     else:
