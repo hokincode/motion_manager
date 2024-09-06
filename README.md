@@ -10,4 +10,15 @@ This is a manager designed to manage motion datasets through the command line. T
 
 ## Current Structure
 
-The script expects a directory named `dataset_meta` in the same folder as `manage.py`. Inside this directory, each dataset meta descriptions is stored as a subfolder.
+The script expects a directory named `dataset_meta` in the same folder as `manage.py`. Inside this directory, each dataset meta descriptions is stored as a subfolder. 
+
+/manager
+    /dataset_meta
+        /dataset_name_1
+            metadata.json
+            LICENSE
+        /dataset_name_2
+            metadata.json
+            LICENSE
+    manage.py
+    /datasets
