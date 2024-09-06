@@ -55,10 +55,8 @@ def print_usage():
 Usage of load_raw.py:
     python load_raw.py dataset_name         Download and extract the specified raw dataset
 
-Available datasets:
-    - imagenet
-    - cifar10
-    - mnist
+Query Available datasets via :
+    python manage_meta.py
 
 Example Usages:
     - Download and extract the ImageNet dataset:
