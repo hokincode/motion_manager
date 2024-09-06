@@ -20,7 +20,7 @@ class RawDataLoader:
         dataset_url = DATASET_URLS.get(dataset_name)
         if not dataset_url:
             print(f"Dataset '{dataset_name}' needs to be downloaded manually. Available datasets are: {list(DATASET_URLS.keys())}")
-            return
+            return False
 
         dataset_path = os.path.join(self.dataset_dir, dataset_name)
         if not os.path.exists(dataset_path):
@@ -72,9 +72,9 @@ def main():
     args = parser.parse_args()
     loader = RawDataLoader(dataset_dir="raw_data")
     # Download the dataset from the provided name
-    loader.download_dataset(args.dataset)
-    # Extract the dataset
-    loader.extract_dataset(args.dataset)
+    loaded = loader.download_dataset(args.dataset)
+    if loaded:
+        loader.extract_dataset(args.dataset)
 
 if __name__ == "__main__":
     main()
