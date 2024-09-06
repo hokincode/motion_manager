@@ -10,11 +10,12 @@ This is a manager designed to manage motion datasets through the command line. T
 
 ## Current Structure
 
-The manager contains all the essential components for managing datasets and their metadata. The `manage.py` script provides a command-line interface to handle various dataset management tasks, such as loading, updating, and processing datasets. The `dataset_meta/` directory organizes metadata and licensing information for each dataset in individual subfolders, ensuring that each dataset's information is clearly separated and easy to access. The `datasets/` directory stores the actual dataset files in respective subdirectories, allowing for a clean and scalable structure that can accommodate multiple datasets. This layout promotes efficient data management and ensures clarity when dealing with large datasets and their corresponding metadata.
+The `manager_directory/` structure is designed for managing raw and processed datasets along with their metadata. The `manage_meta.py` script handles operations related to dataset metadata, stored in the `dataset_meta/` directory, where each dataset has its own subfolder containing a `metadata.json` file and a `LICENSE` file. The `load_raw.py` script is responsible for fetching and organizing raw datasets, which are stored in the `raw_data/` directory. After raw data is processed by the `process_raw.py` script, the cleaned and formatted datasets are saved in the `processed_datasets/` directory, with each dataset in its respective subfolder. This structure ensures a clear separation between raw and processed data while keeping metadata well-organized, making it efficient for managing and processing datasets.
+
 ```
 manager_directory/
 │
-├── manage.py
+├── manage_meta.py
 ├── dataset_meta/
 │   ├── dataset_name_1/
 │   │   ├── metadata.json
@@ -22,9 +23,16 @@ manager_directory/
 │   ├── dataset_name_2/
 │   │   ├── metadata.json
 │   │   └── LICENSE
-│   └── ...  # Additional datasets' metadata
+│  └── ...  # Additional datasets' metadata
 │
-└── datasets/
+├── load_raw.py
+├── raw_data/
+    ├── raw_data_1
+    ├── raw_data_1
+    └── ...  # Additional raw datasets' files fetched from internet
+│
+├── process_raw.py
+└── processed_datasets/
     ├── dataset_name_1/  # Dataset files (e.g., CSV, images, etc.)
     ├── dataset_name_2/  # Dataset files (e.g., CSV, images, etc.)
     └── ...  # Additional datasets' files
