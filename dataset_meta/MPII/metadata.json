@@ -1,0 +1,37 @@
+{
+    "dataset_name": "MPII Human Pose",
+    "description": "MPII Human Pose dataset is a state-of-the-art benchmark for evaluating articulated human pose estimation. It includes 25K images containing over 40K people with annotated body joints. The images were collected based on a taxonomy of everyday human activities and span 410 different human activities. Each image has an activity label, and the dataset also includes preceding and following un-annotated frames for each image. Richer annotations are provided in the test set, including body part occlusions and 3D torso and head orientations.",
+    "size": {
+        "total_images": 25000,
+        "total_people": 40000,
+        "activities": 410
+    },
+    "annotations": {
+        "body_joints": "Each person in the dataset is annotated with body joints for pose estimation.",
+        "activity_labels": "Each image includes an activity label based on the 410 human activities covered.",
+        "test_set": {
+            "occlusions": "Annotations for occluded body parts.",
+            "3D_orientations": "3D torso and head orientations."
+        }
+    },
+    "collection": {
+        "source": "YouTube videos",
+        "frame_extraction": "Images are extracted from YouTube videos, including preceding and following un-annotated frames."
+    },
+    "evaluation": {
+        "test_annotations": "Withheld to prevent overfitting. An automatic evaluation server and performance analysis tools will be provided.",
+        "benchmark": "Performance evaluation follows best practices for preventing overfitting and tuning on the test set."
+    },
+    "citation": {
+        "author": [
+            "Mykhaylo Andriluka",
+            "Leonid Pishchulin",
+            "Peter Gehler",
+            "Bernt Schiele"
+        ],
+        "title": "2D Human Pose Estimation: New Benchmark and State of the Art Analysis",
+        "conference": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "year": 2014,
+        "month": "June"
+    }
+}
