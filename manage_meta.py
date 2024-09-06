@@ -52,7 +52,7 @@ def print_usage():
     usage_text = """
 Usage of manage_meta.py:
     python manage_meta.py --list                    List all available datasets
-    python manage_meta.py --load dataset_name       Print metadata of a specific dataset by name
+    python manage_meta.py --about dataset_name       Print metadata of a specific dataset by name
     python manage_meta.py --add dataset_name        Add a new dataset with default metadata
     python manage_meta.py --license dataset_name     Print license information about a specific dataset
 
