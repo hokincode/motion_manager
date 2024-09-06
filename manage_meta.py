@@ -74,11 +74,8 @@ def main():
     parser.add_argument("--about", type=str, help="Load metadata for a specific dataset")
     parser.add_argument("--add", type=str, help="Add a new dataset with default metadata")
     parser.add_argument("--license", type=str, help="Print License information about the dataset")
-
     args = parser.parse_args()
-
     manager = MetaManager(dataset_dir="dataset_meta")
-
     if args.list:
         manager.list_meta_info()
     elif args.about:
