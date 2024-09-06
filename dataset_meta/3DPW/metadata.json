@@ -1,0 +1,17 @@
+{
+  "dataset_name": "AMASS (Archive of Motion Capture as Surface Shapes)",
+  "description": "AMASS unifies 15 different optical marker-based mocap datasets, representing them in a common framework and parameterization using the MoSh++ method. This converts mocap data into realistic 3D human meshes represented by a rigged body model (SMPL). The dataset contains over 40 hours of motion data, spanning more than 300 subjects and over 11000 motions.",
+  "version": "1.0",
+  "url": "https://amass.is.tue.mpg.de/",
+  "data_format": [
+    "MoSh++",
+    "SMPL body model"
+  ],
+  "number_of_subjects": 300,
+  "total_motion_duration": "40+ hours",
+  "motions": 11000,
+  "recording_method": "Optical marker-based motion capture",
+  "body_representation": "3D human meshes, SMPL skeletal model",
+  "soft_tissue_dynamics": true,
+  "realistic_hand_motion": true
+}
